@@ -1,7 +1,7 @@
 #conteudo{
     width: 900px;
     background-color: blueviolet;
-    border: 1px solid black;
+    border: 2px ridge black;
     margin: 0px auto;
     text-align: center;
 }
@@ -25,4 +25,11 @@
     text-align: center;
     width: 150px;
     height: 30px;
+}
+.campo_digitacao{
+    width: 150px;
+    height: 70px;
+    text-align: center;
+    border: 2px groove black;
+    font-size: 40px;
 }
