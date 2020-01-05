@@ -19,9 +19,8 @@ function imprimirDadosFah_p_Cel(conversao, temperatura){
     x = "<input type='text' class = 'campo_digitacao' id='resultado'>";
     //Passando o valor para a div
     document.getElementById("conteudo").innerHTML += x;
+    x = "<br><br><button type='button' class='botoes'>Menu</button>";
+    document.getElementById("conteudo").innerHTML += x;
     //Colocando o resultado no novo input
     document.getElementById("resultado").value = conversao + "ºC";
-}
-function adicionarBotoesFah_p_Cel(){
-    x = document.getElementById("conteudo").innerHTML;
 }
