@@ -22,7 +22,7 @@ function imprimirDadosFah_p_Cel(conversao, temperatura){
     document.getElementById("conteudo").innerHTML += x;
     x = `<br><br><button type="button" class = "botoes" onclick="window.location.href='fah_cel.html'">Novo cálculo</button>`;
     document.getElementById("conteudo").innerHTML += x;
-    x = `<br><br><button type="button" class="botoes" onclick="window.location.href='index.html'">Menu</button>`;
+    x = `<br><br><button type="button" class="botoes" onclick="window.location.href='index.html'">Menu</button><br><br>`;
     document.getElementById("conteudo").innerHTML += x;
     //Colocando o resultado no novo input
     document.getElementById("resultado").value = conversao + "ºC";
