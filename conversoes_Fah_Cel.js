@@ -3,7 +3,8 @@ function capturarDadosFah_p_Cel(){
     let temperatura = document.getElementById("temp").value;
     //Verifico se o que foi digitado é um número
     temperatura = parseFloat(temperatura);
-    if(isNaN(temperatura) == true || temperatura == undefined || temperatura == "")alert("Informe apenas números e não deixe sem valor!");
+    temperatura == 0?zero = true:zero = false;
+    if((isNaN(temperatura) == true || temperatura == undefined || temperatura == "") && zero == false)alert("Informe apenas números e não deixe sem valor!");
     else{
         //O valor é um numero, podemos trabalhar com ele
         conversao = (temperatura - 32) / 1.8;
@@ -35,7 +36,8 @@ function capturarDadosCel_p_Fah(){
     let temperatura = document.getElementById("temp").value;
     temperatura = parseFloat(temperatura);
     //Verifico se a temperatura digitada é valida
-    if(isNaN(temperatura) == true || temperatura == undefined || temperatura == "")alert("Informe apenas dados numéricos e não deixe sem valor!");
+    temperatura == 0?zero = true:zero = false;
+    if((isNaN(temperatura) == true || temperatura == undefined || temperatura == "") && zero == false)alert("Informe apenas dados numéricos e não deixe sem valor!");
     else{
         //Realizando o calculo C = f - 32 / 1.8 => F -32 = C * 1.8 => F = C * 1.8 + 32
         conversao = temperatura * 1.8 + 32;

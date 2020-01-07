@@ -5,7 +5,8 @@ function capturarDadosCel_p_Kel(){
     //COnvertendo para float
     temperatura = parseFloat(temperatura);
     //Testo se a temperatura é válida
-    if(isNaN(temperatura) == true || temperatura == undefined || temperatura == "")alert("Informe apenas números e não deixe sem valor!");
+    temperatura == 0?zero = true:zero = false;
+    if((isNaN(temperatura) == true || temperatura == undefined || temperatura == "") && zero == false)alert("Informe apenas números e não deixe sem valor!");
     else{
         //Realizando o calculo
         conversao = temperatura + 273;
@@ -39,7 +40,8 @@ function capturarDadosKel_p_Cel(){
     //COnvertendo para float
     temp = parseFloat(temp);
     //Verifico se é válido
-    if(isNaN(temp) == true || temp == undefined || temp == "")alert("Informe apenas números e não deixe sem valor!");
+    temp == 0?zero = true:zero = false;
+    if((isNaN(temp) == true || temp == undefined || temp == "") && zero == false)alert("Informe apenas números e não deixe sem valor!");
     else{
         //Convertendo
         conversao = temp - 273;
